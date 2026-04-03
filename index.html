@@ -102,6 +102,13 @@
 </div>
 
 <script>
+    // GÖRSELLERİ ÖNCEDEN YÜKLEME (PRELOAD)
+    const gifListesi = ["number3.gif", "number4.gif", "number5.gif", "number6.gif", "number7.gif"];
+
+    gifListesi.forEach(gif => {
+        const img = new Image();
+        img.src = gif;
+    });
     let hamle = 0;
     let butonBoyutu = 1;
     let onaylandi = false; // Instagram yönlendirmesi için kontrol
